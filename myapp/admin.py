@@ -12,6 +12,6 @@ class WebpageAdminView(admin.ModelAdmin):
 class AccessDetailsAdminView(admin.ModelAdmin):
     list_display=('webpage','datetime')
     search_fields=('webpage','datetime')
-admin.site.register(models.topic,TopicAdminView)
-admin.site.register(models.webpage,WebpageAdminView)
-admin.site.register(models.accessDetails,AccessDetailsAdminView)
+admin.site.register(models.Topic,TopicAdminView)
+admin.site.register(models.Webpage,WebpageAdminView)
+admin.site.register(models.AccessDetails,AccessDetailsAdminView)
